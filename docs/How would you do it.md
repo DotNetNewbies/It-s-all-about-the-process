@@ -244,10 +244,10 @@ Job Role: Senior .NET Developer
   - implementation (NOW I get to write C# code)
   - Testing (Job of the QA specialist)  
   - Deployment (Job of the DevOps folks)  
-  - Document all phases of the project:
+  - Document all phases of the project (Tech writer again):
     - How to use the application
     - How to test the application
-    - How to manage and alleviate defects
+    - How to manage and alleviate defects in the application  
 - Be the onsite technical lead to teach and provide guidance to the rest of the  
   team.
 - Be the Development Manager to perform code reviews  
@@ -274,6 +274,7 @@ will be *constantly* trying to keep up with 10 different fields of endeavour,
 I must constantly provide training to my peers, etc. etc. etc.  
 And all for the lofty salary of...67K. Yep, sixty-seven thousand dollars a year.  
 
+<hr>  
 
 Position: .NET Developer
 
@@ -315,3 +316,5 @@ Position: .NET Developer
 - Should have good communication skills for very frequent interaction with  
   business and production support team daily.Database knowledge
  
+ Summary of ".NET Developer" position:
+ - Must know what "IB" stands for (Investment Banking)
