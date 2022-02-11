@@ -85,10 +85,10 @@ The major roles in any good software development team are these:
 
        - Ensure the availability of training materials in whatever form is most  
          appropriate for the need and ensures that personnel are given time and  
-         resources to obtain said training. In other words, the training must not  
-         only be available but must be integrated into the day-to-day schedule  
-         of the engineers such that training is just "part of the job" as  
-         opposed to being some "special" thing that serves as a perceived  
+         resources to obtain said training. In other words, the training must  
+         not only be available but must be integrated into the day-to-day  
+         schedule of the engineers such that training is just "part of the job"  
+         as opposed to being some "special" thing that serves as a perceived  
          "interruption" in the on-going solution development process.  
          Training should ***not*** affect the nominal work-life balance, nor  
          should training be an occasional, exceptional "reward" for engineers.  
