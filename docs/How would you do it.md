@@ -109,6 +109,14 @@ The major roles in any good software development team are these:
         ultimately, the demands of the stake holders.  
         Will work with the DM to match tasks with engineers.  
 
+<hr>  
+
+Leaders and Managers and the incredibly vast difference between them:  
+
+[Leaders and Managers][LeadersAndManagers-Url]  
+
+<hr>  
+
 - Engineer - the person responsible for creating the software solution if  
   software is indeed part of the solution based on tasks as assigned by the PM.  
   The ***one*** job of the Engineer is to ***Write Excellent Code***  
@@ -317,4 +325,6 @@ Position: .NET Developer
   business and production support team daily.Database knowledge
  
  Summary of ".NET Developer" position:
- - Must know what "IB" stands for (Investment Banking)
+ - Must know what "IB" stands for (Investment Banking)  
+
+ [LeadersAndManagers-Url]: ./Define%20Leader%20and%20Define%20Manager.md  
