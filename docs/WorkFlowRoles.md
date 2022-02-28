@@ -4,18 +4,23 @@ The major roles in any good software development team are these:
 
 <details>
   <summary>Stakeholder</summary>  
+
   This is the person that has noted the deficiency in the current  
   environment and is the one to whom the progress of the resulting solution  
   will ultimately be reported to.  
+
   Why is the stakeholder part of the team? They are the ones that will  
   ultimately "sign off" on the solution and allow it to pass into production  
   as "the answer" to the original deficiency.  
+
   This person/these people will work with the BA to turn vague "concerns" into  
   proper, single-responsibility-oriented, deficiencies that may be documented  
   in a "request for solution".  
+
   It's important at this step to understand that the more clearly the noted  
   deficiencies are defined, the quicker the solution will ultimately present  
   itself.  
+
   Vagueness in deficiency definition will lead to wasted time in development  
   for a myriad of reasons, the least of which will be coding something that  
   doesn't need to be in the system and all the wasted time that goes with that.  
@@ -24,6 +29,7 @@ The major roles in any good software development team are these:
 
 <details>
   <summary>Business Analyst (BA)</summary>  
+
   Person whose knowledge encompasses the business view  
   of the organization but can "speak" a little "tech". In short, this  
   person is a business process-oriented individual with little actual  
@@ -31,6 +37,7 @@ The major roles in any good software development team are these:
   works" and thus understands, at a business level, the impact of the  
   current deficiency and the resulting benefit of an implemented  
   solution.  
+
   Assists in creating a development dictionary and associated DSL as  
   needed.  
 
@@ -38,12 +45,14 @@ The major roles in any good software development team are these:
 
 <details>
   <summary>System Architect (SA)</summary>  
+
   The opposite of the BA - this person is well versed in  
   technology but has little knowledge of the details of the business. The  
   primary role of the SA is to translate the business-oriented  
   statement(s) of a deficiency and convert that "business-speak" into  
   technology terms that the rest of the development team may use to  
   implement a solution.  
+
   A big portion of this job is maintaining a sense of the "Big Picture".  
   It is the job of the SA to determine the impact of any new software  
   on the current system and *guide* the development of the overall system  
@@ -82,6 +91,7 @@ The major roles in any good software development team are these:
 
 <details>
   <summary>Development Manager (DM)</summary>  
+
   Person who is familiar with the abilities or lack  
   thereof of personnel attached to a particular project.  
   Serves as the "gatekeeper" for code integration into the code  
@@ -110,9 +120,11 @@ The major roles in any good software development team are these:
 
 <details>
   <summary>Project Manager (PM)</summary>  
+
   Person whose purpose is to arrange order of  
   precedence for the derived tasks as generated from the  
   requirements/features.  
+
   This person doesn't need to know who will perform the work, just in what  
   order the work will be performed. This knowledge will come from working  
   with the BA to determine priority based on business needs and,  
@@ -123,6 +135,7 @@ The major roles in any good software development team are these:
 
 <details>
   <summary>Engineer</summary>  
+
   The person responsible for creating the software solution if  
   software is indeed part of the solution based on tasks as assigned by the PM.  
   The ***one*** job of the Engineer is to ***Write Excellent Code***  
@@ -132,15 +145,18 @@ The major roles in any good software development team are these:
 
 <details>
   <summary>Lead Engineer (LE)</summary>  
+
   This is the "go-to" person when a question concerning a new  
   technology comes up during the development process. Should be well-versed in  
   all new technologies as chosen by the SA but at an implementation level vs  
   an integration level. In other words, the SA choses the new tech based on  
   what it does, the Lead Engineer learns how it does it and therefore how to  
   implement that choice and integrate it into the current system.  
+
   May or may not be a "Team Lead" in so much as they would be responsible for  
   overseeing the activities of fellow engineers, this role is not such much a  
   role concerned with *management* as it is ***knowledge***.  
+
   Interfaces with the SA to stay up on selected new technologies as seen from an  
   ***implementation*** viewpoint aka "*how* to make it go" as opposed to "why".  
 
@@ -148,8 +164,10 @@ The major roles in any good software development team are these:
 
 <details>
   <summary>Quality Assurance (QA)</summary>  
+
   Person responsible for testing the software solution to ensure that  
   it meets the requirements from a user point of view.  
+
   Much of this role can be performed by automation, however, in the final  
   analysis, it takes a human user to determine of the solution meets the  
   minimum "non-annoyance" metric. The software might do what it needs to but if  
@@ -159,8 +177,10 @@ The major roles in any good software development team are these:
 
 <details>
   <summary>Quality Assurance Manager (QAM)</summary>  
+  
   Person serving equivalent role to DM but for testers and  
   issue/bug resolution evaluation.  
+
   Works with the DM to validate status of development progress as to code  
   acceptance/rejection and the "why's" and "wherefores" of rejection should  
   such be necessary.  
@@ -169,16 +189,19 @@ The major roles in any good software development team are these:
 
 <details>
   <summary>User</summary>  
+
   Person who actually uses the software on a day to day basis. This  
   person will have insight into the necessary application flow and how things  
   "should" work. WIll most often be the source of motivation for changes in the  
   current system.  
+
   Should ***not*** be the source of the desired solution.  
 
 </details>  
 
 <details>
   <summary>Ops aka DevOps</summary>  
+
   Person responsible for overseeing deployment of the software solution to  
   both a testing/QA environment and to Production.  
 
@@ -186,12 +209,14 @@ The major roles in any good software development team are these:
 
 <details>
   <summary>User Experience Specialist (UX)</summary>  
+
   User interface specialist. Includes a "copywriter", a person that is  
   responsible for making the user interface more palatable (understandable)  
   to the rest of the universe. This individual will be something of an artist  
   focused on user interfaces (a task which most regular developers suck at).  
   Provides input/feedback from/to users to effect a desired user interface and  
   corresponding flow of the business process said UI is to effect.  
+
   Provides input for the technical writer such that the documentation for the  
   system is both up-to-date and accurate such that new users have a reliable  
   resource to call upon to learn the business processes via the interface.    
@@ -200,6 +225,7 @@ The major roles in any good software development team are these:
 
 <details>
   <summary>Technical Writer (TW)</summary>  
+  
   Technical Writer aka "technical documentation specialist". Person that  
   documents the "how" and "why" of the solution and integrates that  
   information into the current system documentation.  
