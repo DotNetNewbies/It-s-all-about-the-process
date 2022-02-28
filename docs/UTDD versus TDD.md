@@ -125,8 +125,8 @@ Summary of the differences between UTDD and TDD:
     ***SO WHAT!?*** "Later" never needed to arrive!  
 - As a software engineer, your focus should be on your career as a developer.  
   - UTDD encourages you to become excellent working with the languages you  
-    choose to master and excel writing. TDD encourages you to focus on  
-    writing good *tests*.  
+    choose to master and excel writing.  
+  - TDD encourages you to focus on writing good *tests*.  
 
 And here we come to the first point of real contention. There are two reasons  
 I don't like TDD, one, the focus on the test vs the algorithm, the other is the  
@@ -190,7 +190,7 @@ perceived mental health aspect of UTDD vs TDD and I see it as this:
   ***test harness code is functioning correctly before it's ever released***  
   ***out into the world!***  
   
-  It's not like someone is going to sneak in during the night and changed the  
+  It's not like someone is going to sneak in during the night and change the  
   test harness on your machine with evil intent in mind so that all your TDD  
   activities will now be forever corrupted by an "evil" test harness.  
 
