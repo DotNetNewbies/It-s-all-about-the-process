@@ -92,6 +92,7 @@ In summary, the project is broken up into predictable pieces:
 The hallmark of waterfall is that one step is completed, *in it's entirety*  
 before moving on to the next step. This makes waterfall *extremely* brittle and  
 inflexible and is *NOT* a recommended method for developing software.  
+
 Really, the only good thing about waterfall is that it emphasizes acquiring  
 good requirements as the first step. However, there is no formal process for  
 gathering said requirements, it's left to the stake holders and users to  
@@ -99,6 +100,7 @@ determine what the system needs to do. As outlined later, the *last* people one
 should ask about requirements are *users*! Yes, that statement seems  
 contradictory, all will be made clear when "users" are discussed later in the  
 paper.  
+
 The big fail for waterfall comes in that once a phase is completed, it is  
 *never revisited*. So if customer requirements change, said changes are pushed  
 off to the next version of the software regardless of the importance of the  
@@ -110,6 +112,7 @@ whichever development methodology is chosen. It's tough to implement in some
 circumstances (waterfall really can't make use of CI very well) but CI isn't,  
 in my not so humble opinion, a "software development methodology", it's a  
 process *used* by said methodologies.  
+
 Nowadays, CI is often coupled with CD (Continuous Deployment) such that new  
 code is automatically added to the production branch of source code, compiled  
 and deployed as part of an automated process rather than a process in and of  
@@ -128,6 +131,7 @@ promoted itself as *the* RAD tool to use. So much so that Microsoft felt
 threatened and came up with its own solution to Delphi - Visual Basic, the other  
 RAD tool. So, what's so cool about RAD? The seeming inclusion of the user from  
 the beginning of the development process.  
+
 RAD allows the developer to sit down with a user and mock up user interfaces  
 and models very quickly (hence the "Rapid" in RAD) and the user gets to apply  
 instant approval/disapproval of the design *as it is being constructed*. This  
@@ -136,6 +140,7 @@ to write good software. Why? It's *user driven* (again, I'll explain later).
 Sadly, I have even seen a shop in which the manager observed the creation  
 process of some of these mock-ups and when the customer signed off on all of  
 them, the next step was **ship it!**  
+
 Yep, ship it. ***Never mind that there was no functional code behind the***  
 ***mock-ups***, the screens were approved so "obviously" the code was complete  
 and it could be shipped! Marvelous "productivity", cut development time in  
@@ -240,6 +245,7 @@ asked "How is it that you have such happy customers? How do you know what they
 want?". Henry smiled slyly and answered thus: "I don't give customers what they  
 want, I give them what the need. If I were to give the customers what they want,  
 I'd be breeding faster horses!".  
+
 And that, my friends, is the secret. Users can only see the world through the  
 eyes of their current situation and their first instinct is to "fix what's  
 wrong by doing (insert whatever foolishness they think will fix things)" aka  
@@ -249,6 +255,7 @@ is the big reason methodologies like RAD failed miserably - they are all
 customer-focused. This is an outgrowth of viewing the world through the eyes of  
 management. "Make the customer happy! The customer is always right!", etc. ad  
 nauseam.  
+
 Nothing could be further from the truth! Now, allow me to clarify. The customer  
 is indeed the one that drives software development but the viewpoint is all  
 wrong and it usually starts out by said customer starting a sentence with a  
@@ -258,6 +265,7 @@ The epic fail here is that the customer doesn't know what's needed, they only
 know what they want. What's needed is to understand ***the problem***. As in  
 the old saying "Half the solution is understanding the problem to begin with",  
 was never more true.  
+
 So, how should this be addressed? Get the user stories for sure. Gather the  
 use cases as to how the software needs to respond to a given situation but then,  
 turn all of that information over to a business analyst and the system architect  
@@ -294,17 +302,20 @@ What do I mean? Examples:
   the project manager and told her about it, the first and only question was:  
   "how long to fix it?". My answer: "I don't know". Her response "Why don't you  
   know!?" and the conversation went downhill rapidly from there.  
+
   The problem is that we had to look at the calling code, the support code in  
   the validation method itself, the actual validation code itself (thanks  
   Satya for open sourcing .net) and the input xsd and the unit testing harness  
   that had been re-written for .NET Core. How long would that take?  
   As long as it takes. We could not estimate how long as we had *no idea* where  
   to start looking so we had to look at *all of it*.  
+
   The response: "I can't work with that, I have people to answer to and they  
   want to know when this will be done!". Pure manager-speak. Totally inflexible,  
   totally demeaning in that it was implied that my team was completely  
   incompetent and that we should be able to pull a firm date of completion  
   out of thin air and stick to it or woe betide the consequences.  
+
   Did we find the flaw? Yes, eventually. It was in the new xsd file thus not  
   even our problem. We rely on valid input from the xsd team. *They* failed, but  
   *we* were held accountable for the delay.  
@@ -316,16 +327,19 @@ What do I mean? Examples:
   the development team to figure out if it's a flaw in the code or a flaw in  
   the input xsd (sometimes it's even both) but the flaws were few and easy to  
   fix ***if you could edit the resulting output file***.  
+
   How did we know there were flaws? Simple - the tool generated a .cs file and  
   we went directly from generation to compilation and observed the output  
   window for errors. If there were none, tool did it's job, move on. If there  
   were errors, open the .cs file and fix them.  
+
   Aye, there's the rub - the output file. Once we fixed the xsd file, the next  
   step was to run it through the gadget and generate the c# file. Notice that  
   I am deliberately saying "file" - singular, not "files" - plural. You might  
   be able to see what's coming here. We ran the xsd and then wanted to go in  
   and fix the errors that came up so, naturally, we opened said .cs file in  
   Visual Studio 2019 ***and promptly crashed Windows!***  
+
   Oops! Epic fail! And this is repeatable - didn't matter the machine, didn't  
   matter the amount of installed RAM, etc. Open the file, crash Windows. We  
   had *no idea* why at the beginning and reported to that same PM the new  
@@ -342,7 +356,9 @@ What do I mean? Examples:
   several ***tens of thousands of lines of code*** and we needed to go in,  
   find the generator code, figure out how to adapt it ***without breaking***  
   ***the rest of the code***, recompile the tool and then test it.  
+
   PM's response: "How long will that take?!". You can fill in the rest.  
+
   The unforeseen: The code generator worked flawlessly, did just what it was  
   supposed to do, however, the result was a file that VS could not handle.  
 
@@ -362,7 +378,7 @@ What do I mean? Examples:
   time!". Yep, they do. Now you know where need for and the associated term  
   "Service Pack" comes from. The team will do the best they can to get the  
   code as close to operational as possible but *management* decrees that  
-  such-and-such a date as arrived, so ***SHIP IT!*** and be damned to whatever  
+  such-and-such a date has arrived, so ***SHIP IT!*** and be damned to whatever  
   bugs might still exist. "We'll fix it in the Service Pack" aka "Windows  
   Update", aka...you get the idea. The date-based methodology only works if  
   you are willing to release buggy, possibly broken code to your customers.  
@@ -370,11 +386,13 @@ What do I mean? Examples:
   Why do I not do estimates, you might ask? Simple. Software development, as  
   much as it is supposed to fit under the auspices of "Computer Science" is  
   actually *not* a "science" at all. This is an *art*.  
+
   Sure, we have science to *guide* us, there is Set Theory for databases, we  
   have pattern-based programming to assist us in creating good code, we have  
   Object Oriented Programming to help us model the real world, we have  
   intelligent IDE's to help us write good code but at the end of the day, all  
   of that relies on the *creative* mind of an engineer to make it all work.  
+
   Think about it. ***Every*** piece of software ever written, no exceptions,  
   began life as an idea in the mind of an engineer. Even AI-generated code,  
   started out as a blank screen and then an engineer had to write the AI  
@@ -383,6 +401,7 @@ What do I mean? Examples:
   every-day, *easily replaced* Joe Schmoe. A creative *expert*, an engineer,  
   has to *create* it and then bring it to life in an environment that will  
   support it.  
+
   Want a little entertainment that emphasizes the point? Go watch a movie, it's  
   an old one starring Charlton Heston and Rex Harrison called "The Agony and  
   the Ecstasy". It's about Michael Angelo and painting the Sistine Chapel  
@@ -441,12 +460,14 @@ The key is the task. It *must* be a Single Responsibility such that it can be
 written by one or at most two engineers in a relatively short amount of time.  
 It should be easy to analyze and construct the correct algorithm to support the  
 task.  
+
 Since the task will be small, appreciable progress will be easy to show, one  
 might write a dashboard web page that shows overall progress, etc. Changes are  
 easy to incorporate because the design has been broken down into "S" chunks.  
 Thus if a customer has a change in functionality, the entire system is agile in  
 it's response simply by going through the chunking process and adding the new  
 task(s) to the mix.  
+
 Documentation is kept to an operational minimum, mainly consisting of ensuring  
 that the requirements are fully expressed and there is no "mystery" in what  
 needs to be done. Queries as to how to proceed, etc. can all go into the  
@@ -458,16 +479,17 @@ Nowhere in the above do you see "timeline", "sprint", "time boxing", "estimate",
 etc. Nor do you see users driving the process. Their input is taken, but only  
 as the grist for the mill of the BA and SA to determine what the actual  
 solution will look like. User stories become the source of the motivation, not  
-the source of the solution. To paraphrase Henry Ford, we aint in the business  
+the source of the solution. To paraphrase Henry Ford, we ain't in the business  
 of breeding faster horses.  
 
 Productivity is still a metric as can be observed via the daily progress  
-entries. There is no embarassment caused by "daily stand ups" where you get to  
+entries. There is no embarrassment caused by "daily stand ups" where you get to  
 report your ongoing "failure" to move forward or, worse, consider lying and  
 not reporting a difficulty because you don't want to look like an idiot to your  
 peers (that whole mental health issue again), nor is your chain of thought  
 broken by interruption due to these silly meetings. BUT, "productivity" is a  
 by-product of code excellence as the focus here is to write excellent code.  
+
 How long will it take? As long as it takes. It'll be completed when it is  
 finished. The thing that management doesn't want to acknowledge is that their  
 team will do their utmost, bringing all the awesome power of their collective  
@@ -482,8 +504,8 @@ onus on the engineer to fix *any* mistake made by *anyone*. It is said that
 excrement roles down hill and sadly, the developer engineer is at the bottom  
 of the hill and is thus held accountable for *everything* because "the code  
 wasn't completed on time!". I have grown weary indeed of being held accountable  
-for things that are not only not under my control but not even my purview and  
-sometimes not even my bailiwick!  
+for things that are not only not under my control but not even under my purview  
+and sometimes not even my bailiwick!  
 
 Leaders can embrace the above process both because they can monitor and show  
 progress but they are not required to participate on a daily basis - they need  

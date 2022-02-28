@@ -5,7 +5,7 @@ software engineer (which I am).
 The following are just two of the myriad job offers I receive every day. These  
 jobs are typical in their "required skills", I did not single them out for  
 anything save that their job description was a little better than most as they  
-contain a bit more detail as to what the job entails.  
+contain a bit more detail as to what the job actually entails.  
 
 Job Role: Senior .NET Developer
 
@@ -109,7 +109,7 @@ competent to perform.
 
 As I see it, should I wish to perform my job in keeping with my *very* high  
 standards, my so-called "work-life balance" just went out the window for  
-multiple reasons (think off-short time zones and emerging "emergencies"), I  
+multiple reasons (think off-shore time zones and emerging "emergencies"), I  
 will be *constantly* trying to keep up with 10 different fields of endeavour,  
 I must constantly provide training to my peers, etc. etc. etc.  
 And all for the lofty salary of...67K. Yep, sixty-seven thousand dollars a year.  
@@ -163,7 +163,7 @@ Position: .NET Developer
   - concurrent programming (a specialization)
   - design patterns.  
 - Must have ***10 years*** .NET experience? Wait, what? 10 *years* experience  
-  with which kind of .NET? Full Framework? MS stopped dev on that 3 years ago.
+  with which kind of .NET? Full Framework? MS stopped dev on that 3 years ago.  
   Core? OK, which one? There are ***major*** changes between 3.1, 5 and 6,  
   4 *language* changes that I am aware of so...10 years experience? Clarify!  
 - 10 years not only as an algorithmic developer, but now, also 10 years with  
@@ -184,11 +184,11 @@ Position: .NET Developer
   but is usually not plugged into the rest of the development process.  
 - Oracle PL/SQL skills and be able to tune queries (hint: That's the DBA's job)  
 - Good knowledge of international banking procedures, reference data and  
-  transactional data (another specialty)  
+  transactional data (another specialty), should be the purview of the BA.  
 - Understanding of "Control-M Scheduling tool" - never heard of it.  
 - You are ambitious, dedicated, hardworking and can work on own initiative  
   whilst also working collaboratively and deliver on time with a high level of  
-  integrity, sense of urgency, attention to -detail and quality standards.
+  integrity, sense of urgency, attention to -detail and quality standards.  
   aka "Gung-Ho!". Deliver "on time"? See the imponderables.  
 - Transform customer requirements into workable design. Hint: This is the SA's  
   and the BA's job!
@@ -226,6 +226,9 @@ The first implication is that there will be a cross-functional team meaning that
 the folks will come from a wide variety of disciplines, each one a full-time  
 career, not something one can do for an hour or two a week and be acceptably  
 functional, let alone actually *good* at.  
+
+So, first presumption is that this posting is for an *entire team*, not just a  
+single developer.  
 
 The major roles in any good software development team are these:  
 
@@ -506,7 +509,7 @@ then write the code.
 
 The rest is maintenance and workflow, most, if not all, of which should be a  
 very non-intrusive, automated process. The engineer should be able to focus on  
-a single function - writing code. After all, all of this preparation,  
+a single function - writing excellent code. After all, all of this preparation,  
 definition, classification and organization is in place for the sole purpose  
 of providing the engineer with as painless and easy an environment to work in  
 as possible. Why? Because it's the engineer that is providing the deliverable,  
